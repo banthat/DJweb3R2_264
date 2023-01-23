@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+
+{% block content %}
+    <h1>This is Test Bootstrap</h1> <br>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="alert alert-success">
+                <strong>สำเร็จ!</strong>
+                ท่านลงทะเบียนบัญชีผู้ใช้ระบบสำเร็จแล้ว
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="alert alert-danger">
+        <strong>ผิดพลาด!</strong>
+        เกิดข้อผิดพลาดของระบบ
+    </div> <br>
+    <span class="badge bg-warning">Warning</span>
+    <span class="badge bg-primary">Primary</span> <br><br>
+    <span class="badge rounded-pill bg-dark">Dark</span>
+    <span class="badge rounded-pill bg-danger">Danger</span> <br><br>
+
+    <div class="progress" style="height: 30px">
+        <div class="progress-bar bg-success" style="width: 80%; height: 30px">80%</div>
+    </div> <br>
+
+    <p class="text-danger">
+        GIRLS' GENERATION - 7th Album [ Forever 1 ] ราคา 1,150 บาท
+        <button data-bs-toggle="collapse" data-bs-target="#demo">ดูรายละเอียด...</button>
+    </p>
+    <div id="demo" class="collapse">
+        💿[Deluxe version] GIRLS' GENERATION(SNSD) - 7th Album [ Forever 1 ] <br>
+        🎵 Contents <br>
+        &nbsp &nbsp - Box Package <br>
+        &nbsp &nbsp - Photo book 108p <br>
+        &nbsp &nbsp - CD-R <br>
+        &nbsp &nbsp - Lyrics Paper <br>
+        &nbsp &nbsp - Sticker <br>
+        &nbsp &nbsp - Ticket 1ea (1 out of 8) <br>
+        &nbsp &nbsp - Invitation card <br>
+        &nbsp &nbsp - Photo card <br>
+        &nbsp &nbsp - Photo card 1ea (1 out of 8) <br>
+    </div> <br>
+
+    <p class="text-danger">
+        NCT DREAM - Special Winter Mini Album [ Candy ] ราคา 1,275 บาท
+        <a href="" data-bs-toggle="collapse" data-bs-target="#demo2">ดูรายละเอียด...</a>
+    </p>
+    <div id="demo2" class="collapse">
+        💿[Digipack version] NCT DREAM - Special Winter Mini Album [ Candy ] <br>
+        🎵 Contents <br>
+        &nbsp &nbsp - Package <br>
+        &nbsp &nbsp - Ball Chain <br>
+        &nbsp &nbsp - Music NFC CD <br>
+        &nbsp &nbsp - SMini Case <br>
+        &nbsp &nbsp - Photo card 1ea (1 out of 7) <br>
+    </div> <br>
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        เปิดหน้าต่าง
+    </button>
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-keyboard="false" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">ผิดพลาด!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    ท่านป้อนข้อมูลไม่ถูกต้อง กรุณาตรวจสอบและแก้ไขข้อมูลให้ถูกต้อง
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div> <br><br>
+
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Hover</a><br>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Hover</a><br>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Hover</a><br>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Hover</a> <br><br><br>
+
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a><br>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content">Bottom</a><br>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="left" data-content="Content">Left</a><br>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right" data-content="Content">Right</a><br><br><br>
+
+
+{% endblock %}

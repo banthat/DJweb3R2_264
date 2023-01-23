@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <br>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/nct.jpg' %}" alt="Girls' Generation" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/nct2.jpg' %}" alt="Red Velvet" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/nct3.jpg' %}" alt="NCT Dream" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/nct4.jpg' %}" alt="aespa" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+    <h1 class="text-center text-info" >My Grade Information</h1>
+    <table border="1" class="table table-striped">
+        <tr>
+            <td>Subject ID</td>
+            <td>Subject Name</td>
+            <td>Credit</td>
+            <td>Grade</td>
+        </tr>
+        <tr>
+            <td>65-029-475-001</td>
+            <td>Accounting</td>
+            <td>3</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>65-329-598-002</td>
+            <td>Financial</td>
+            <td>3</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>65-392-408-001</td>
+            <td>Computer Programming</td>
+            <td>3</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>65-498-398-002</td>
+            <td>Java Programming</td>
+            <td>3</td>
+            <td>B+</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <a href="/firstpage" class="btn btn-primary">Go To First Page</a>
+    <a href="/secondpage" class="btn btn-danger">Go To Second Page</a>
+    <a href="/hnypage" class="btn btn-success">Go To Home Page</a>
+
+    <br>
+    <br>
+
+{% endblock %}

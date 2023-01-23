@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <div class="mt-4 p-5 text-white rounded" style="background-color: #FF6699">
+        <h1 class="text-end"><b>Welcome To SM Entertainment Group</b></h1>
+        <br>
+        <p>SM Entertainment Co., Ltd. is a South Korean multinational entertainment agency. <br>
+            It is one of South Korea's largest entertainment companies where it was established in 1995 <br>
+            by record executive and record producer Lee Soo-man. The company has been responsible <br>
+            for fostering and popularizing the careers of many K-pop stars garnering huge global fanbases. <br>
+            The company operates as a record label, talent agency, music production company, <br>
+            event management and concert production company, and music publishing house. <br>
+            SM Entertainment is known for having led the worldwide K-pop phenomenon and the musical side <br>
+            of "Hallyu", also known as the "Korean Wave"
+        </p>
+    </div>
+
+    <br>
+    <div class="text-center"><br>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-border text-muted"></div>
+        <div class="spinner-border text-dark"></div>
+    </div>
+    <br>
+    <div>
+        <div class="row text">
+            <div class="col-lg-4">
+                <img src="{% static 'images/snsd.jpg' %}" width="300px" height="200" class="img-thumbnail">
+            </div>
+
+            <div class="col-lg-4">
+                <img src="{% static 'images/red-velvet.jpg' %}" width="300px" height="200" class="img-thumbnail">
+            </div>
+
+            <div class="col-lg-4">
+                <img src="{% static 'images/aespa.jpg' %}" width="300px" height="200" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

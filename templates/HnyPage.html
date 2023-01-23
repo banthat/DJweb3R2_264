@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <br>
+    <h1 class="bg-warning text-primary text-center" >Welcome To Winter</h1>
+    <br>
+    <h2 class="bg-info text-danger text-center">
+        Merry Christmas and Happy New Year 2023
+    </h2>
+
+    <p class="bg-danger text-white text-center">
+        <img src="{% static 'images/HNY1.jpg'%}" class="rounded-circle" width="500px" height="300px"> <br>
+        Sending You Peace, Love and Joy this Holiday Season. <br>
+        <i>ส่งความสันติสุข ความรัก และความปิติยินดีมาให้ในเทศกาลวันหยุดนี้ <br></i>
+    </p>
+
+    <p class="bg-success text-white text-center">
+        <img src="{% static 'images/HNY2.png'%}" class="rounded-circle" width="500px" height="300px"> <br>
+        Have a Jolly Holiday. <br>
+        <i>เพื่อนส่งถึงกัน ผู้ใหญ่ส่งถึงลูกหลาน เจ้านายส่งถึงลูกน้อง อวยพรให้มีความสุขในช่วงวันหยุด <br>
+        เช่นใช้อวยพรเพื่อนที่กำลังมีทริปไปเล่นสกีหรือไปสวนสนุก Have a Jolly Holiday ขอให้เป็นวันหยุดอันแสนสุขสันต์ <br>
+            โดยประโยค Jolly Holiday มาจากเพลงชื่อเดียวกัน ซึ่งใช้ประกอบภาพยนตร์ดิสนีย์เรื่อง Mary Poppins<br></i>
+    </p>
+    <br>
+        <ul type="square" class="list-group">
+            <li class="list-group-item-primary">สิ่งที่สนใจ:</li>
+            <li class="list-group-item">Game</li>
+            <li class="list-group-item">Movie</li>
+            <li class="list-group-item">Novel</li>
+            <li class="list-group-item">Song</li>
+        </ul><br>
+
+        <ol type="A" class="list-group">
+            <li class="list-group-item-danger">favorites Web Site:</li>
+
+            <li class="list-group-item"><a href="https://www.facebook.com/" target="_blank">facebook.com</a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank">youtube.com</a></li>
+            <li class="list-group-item"><a href="https://www.instagram.com/" target="_blank">instagram.com</a></li>
+            <li class="list-group-item"><a href="https://www.tiktok.com/en/" target="_blank">tiktok.com</a></li>
+            <li class="list-group-item"><a href="https://www.mebmarket.com/" target="_blank"> 
+                <img src="{% static 'images/meb.png' %}" width="50px" height="50px">
+            </a></li>
+        <li class="list-group-item"><a href="https://www.mebmarket.com/" target="_blank">
+                <img src="{% static 'images/meb.png' %}" width="50px" height="50px">
+            </a></li>
+        </ol>
+
+    <br>
+    <a href="/firstpage" class="btn btn-success">Go To First Page</a>
+    <a href="/secondpage" class="btn btn-danger">Go To Second Page</a>
+    <a href="/thirdpage" class="btn btn-primary">Go To Third Page</a>
+{#    <a href="{% url 'firstpage' %}">Go To First Page</a>#}
+    <br>
+    <br>
+
+{% endblock %}
